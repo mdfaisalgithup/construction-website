@@ -17,6 +17,12 @@ export default function RootLayout({ children }) {
       <head>
         {/* Monetag verification meta tag */}
         <meta name="monetag" content="93da8b61128bdf7e670261baae72ddc8" />
+        {/* Monetag tag script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "(function(s){s.dataset.zone='12216219',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))",
+          }}
+        />
         {/* Google AdSense Auto Ads Script for publisher pub-9131582476102508 */}
         <script
           async
