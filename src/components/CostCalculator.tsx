@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, DollarSign, Clock, Layers, ArrowRight, Check } from 'lucide-react';
-import { AdSenseUnit } from './AdSenseUnit';
+import { Calculator, DollarSign, Clock, Layers, ArrowRight } from 'lucide-react';
 
 interface CostCalculatorProps {
   onApplyEstimate: (estimateDetails: string) => void;
@@ -183,11 +182,6 @@ export const CostCalculator: React.FC<CostCalculatorProps> = ({ onApplyEstimate 
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
-        </div>
-
-        {/* Display AdSense unit under Calculator */}
-        <div className="mt-12">
-          <AdSenseUnit adSlot="9876543210" adFormat="auto" title="Sponsored Sponsor" />
         </div>
       </div>
     </section>

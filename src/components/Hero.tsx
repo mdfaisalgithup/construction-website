@@ -1,6 +1,5 @@
 import React from 'react';
-import { ShieldCheck, HardHat, Award, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { AdSenseUnit } from './AdSenseUnit';
+import { HardHat, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface HeroProps {
   onOpenQuote: () => void;
@@ -46,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreServices }) =>
                 onClick={onExploreServices}
                 className="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl border border-slate-700 transition-all"
               >
-                Explore Services & Ads
+                Explore Services
               </button>
             </div>
 
@@ -62,7 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreServices }) =>
               </div>
               <div className="flex items-center gap-2 text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>AdSense Monetized Portal</span>
+                <span>On-Time Execution Guarantee</span>
               </div>
             </div>
           </div>
@@ -89,11 +88,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreServices }) =>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Top AdSense Display Banner integration in Hero footer */}
-        <div className="mt-12">
-          <AdSenseUnit adSlot="1234567890" adFormat="horizontal" title="Featured Sponsor Ad" />
         </div>
       </div>
     </section>

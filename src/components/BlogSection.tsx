@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Newspaper, Clock, ArrowRight, X, Sparkles } from 'lucide-react';
-import { AdSenseUnit } from './AdSenseUnit';
+import { Clock, ArrowRight, X } from 'lucide-react';
 
 export const BlogSection: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<any | null>(null);
@@ -56,7 +55,7 @@ Centralized AV racks and climate zoning ensure absolute reliability without rely
             </h2>
           </div>
           <p className="mt-4 md:mt-0 text-slate-600 dark:text-slate-400 max-w-md text-sm">
-            Read expert analyses on structural engineering, interior design trends, and cost optimization. All articles feature Google AdSense In-Article ad units.
+            Read expert analyses on structural engineering, interior design trends, and cost optimization.
           </p>
         </div>
 
@@ -101,21 +100,11 @@ Centralized AV racks and climate zoning ensure absolute reliability without rely
               </div>
 
               <div className="p-6 pt-0 flex items-center justify-between text-xs font-semibold text-amber-600 dark:text-amber-400">
-                <span>Read Full Article & View In-Article Ads</span>
+                <span>Read Full Article</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </article>
           ))}
-        </div>
-
-        {/* Embedded In-Article AdSense Unit */}
-        <div className="mt-12">
-          <AdSenseUnit
-            adSlot="1122334455"
-            adFormat="fluid"
-            layoutKey="-fb+5w+4e-db+86"
-            title="Google AdSense In-Article Ad Unit"
-          />
         </div>
 
         {/* Article Reading Modal */}
@@ -150,16 +139,6 @@ Centralized AV racks and climate zoning ensure absolute reliability without rely
 
               <div className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>{selectedArticle.content}</p>
-
-                {/* IN-ARTICLE AD INJECTED NATURALLY INSIDE ARTICLE CONTENT */}
-                <div className="my-6">
-                  <AdSenseUnit
-                    adSlot="9988776655"
-                    adFormat="fluid"
-                    layoutKey="-6t+ed+2i-1n-4v"
-                    title="In-Article Native Ad (Publisher pub-9131582476102508)"
-                  />
-                </div>
 
                 <p>
                   As engineering standards evolve, incorporating these advanced building methodologies ensures enduring structural integrity, aesthetic brilliance, and maximum return on investment for property owners.

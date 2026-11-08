@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, ShieldCheck, Mail, Phone, MapPin } from 'lucide-react';
+import { Building2, Mail, Phone, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -17,10 +17,6 @@ export const Footer: React.FC = () => {
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
               Leading the industry in precision architectural engineering, custom residential construction, and commercial developments.
             </p>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 w-fit">
-              <ShieldCheck className="w-4 h-4 text-amber-500" />
-              <span>AdSense Publisher: pub-9131582476102508</span>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -31,7 +27,7 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-amber-400 transition-colors">Capabilities</a></li>
               <li><a href="#calculator" className="hover:text-amber-400 transition-colors">Cost Estimator</a></li>
               <li><a href="#portfolio" className="hover:text-amber-400 transition-colors">Portfolio</a></li>
-              <li><a href="#blog" className="hover:text-amber-400 transition-colors">Articles & Ads</a></li>
+              <li><a href="#blog" className="hover:text-amber-400 transition-colors">Articles & Insights</a></li>
             </ul>
           </div>
 
@@ -72,7 +68,6 @@ export const Footer: React.FC = () => {
           <div className="flex gap-6">
             <span className="hover:text-slate-400 cursor-pointer">Privacy Policy</span>
             <span className="hover:text-slate-400 cursor-pointer">Terms of Service</span>
-            <span className="hover:text-slate-400 cursor-pointer">AdSense Disclosure</span>
           </div>
         </div>
       </div>

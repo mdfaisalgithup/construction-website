@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Calculator, Wrench, Newspaper, PhoneCall, Moon, Sun, ShieldCheck } from 'lucide-react';
+import { Building2, Calculator, Newspaper, PhoneCall, Moon, Sun } from 'lucide-react';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div className="flex flex-col">
             <span className="leading-tight font-extrabold tracking-tight">ApexBuild</span>
-            <span className="text-[10px] font-medium tracking-widest uppercase text-amber-600 dark:text-amber-400">Construction & Ads Portal</span>
+            <span className="text-[10px] font-medium tracking-widest uppercase text-amber-600 dark:text-amber-400">Construction Portal</span>
           </div>
         </a>
 
@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
           >
             <Newspaper className="w-4 h-4 text-amber-500" />
-            Articles & Ads
+            Articles & Insights
           </button>
           <button
             onClick={() => onNavigate('contact')}
@@ -70,12 +70,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Zone 3: 1 primary action + Utilities */}
         <div className="flex items-center gap-4 shrink-0">
-          {/* AdSense Publisher Badge */}
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/50 rounded-full text-xs font-mono text-amber-800 dark:text-amber-300">
-            <ShieldCheck className="w-3.5 h-3.5 text-amber-600" />
-            <span>pub-9131582476102508</span>
-          </div>
-
           {/* Theme Toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}

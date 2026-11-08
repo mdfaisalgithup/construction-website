@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Building2, MapPin, Calendar, ArrowUpRight, Filter } from 'lucide-react';
-import { AdSenseUnit } from './AdSenseUnit';
+import { MapPin, Calendar, ArrowUpRight } from 'lucide-react';
 
 interface ProjectGalleryProps {
   onOpenQuote: () => void;
@@ -124,11 +123,6 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuote }) =
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Display AdSense unit under Portfolio */}
-        <div className="mt-12">
-          <AdSenseUnit adSlot="5556667788" adFormat="auto" title="Portfolio Sponsor Ad" />
         </div>
       </div>
     </section>
