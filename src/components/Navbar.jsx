@@ -20,7 +20,7 @@ export const Navbar = ({
             <Building2 className="w-6 h-6" />
           </div>
           <div className="flex flex-col">
-            <span className="leading-tight font-extrabold tracking-tight">ApexBuild</span>
+            <span className="leading-tight font-extrabold tracking-tight">Apexbuilds</span>
             <span className="text-[10px] font-medium tracking-widest uppercase text-amber-600 dark:text-amber-400">Construction Portal</span>
           </div>
         </a>

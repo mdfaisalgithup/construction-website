@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold">
                 <Building2 className="w-6 h-6" />
               </div>
-              <span className="text-xl font-extrabold tracking-tight">ApexBuild</span>
+              <span className="text-xl font-extrabold tracking-tight">Apexbuilds</span>
             </div>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
               Leading the industry in precision architectural engineering, custom residential construction, and commercial developments.
@@ -57,14 +57,14 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-                <span>contact@apexbuildportal.com</span>
+                <span>contact@apexbuilds.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 ApexBuild Construction Portal. All rights reserved.</p>
+          <p>© 2026 Apexbuilds Construction Portal. All rights reserved.</p>
           <div className="flex gap-6">
             <span className="hover:text-slate-400 cursor-pointer">Privacy Policy</span>
             <span className="hover:text-slate-400 cursor-pointer">Terms of Service</span>

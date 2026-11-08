@@ -2,10 +2,10 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata = {
-  title: 'ApexBuild — Construction & Home Renovation Portal',
+  title: 'Apexbuilds — Construction & Home Renovation Portal',
   description: 'Premier construction home page featuring custom residential builds, commercial remodeling, cost estimators, and expert architecture guides.',
   openGraph: {
-    title: 'ApexBuild — Construction & Home Renovation Portal',
+    title: 'Apexbuilds — Construction & Home Renovation Portal',
     description: 'Premier construction home page featuring custom residential builds, commercial remodeling, cost estimators, and expert architecture guides.',
     type: 'website',
   },

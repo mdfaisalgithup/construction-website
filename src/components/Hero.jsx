@@ -13,7 +13,7 @@ export const Hero = ({ onOpenQuote, onExploreServices }) => {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-500/15 text-amber-400 border border-amber-500/30">
               <HardHat className="w-4 h-4 text-amber-400" />
-              <span>Premier Construction & Engineering Portal</span>
+              <span>Apexbuilds Engineering Portal</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] text-wrap">
@@ -24,7 +24,7 @@ export const Hero = ({ onOpenQuote, onExploreServices }) => {
             </h1>
 
             <p className="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
-              From high-end residential luxury estates to state-of-the-art commercial complexes, ApexBuild delivers precision engineering, on-time execution, and unmatched craftsmanship.
+              From high-end residential luxury estates to state-of-the-art commercial complexes, Apexbuilds delivers precision engineering, on-time execution, and unmatched craftsmanship.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
