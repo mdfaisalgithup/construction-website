@@ -1,14 +1,7 @@
 import React from 'react';
 import { Building2, Calculator, Newspaper, PhoneCall, Moon, Sun } from 'lucide-react';
 
-interface NavbarProps {
-  darkMode: boolean;
-  setDarkMode: (val: boolean) => void;
-  onOpenQuote: () => void;
-  onNavigate: (sectionId: string) => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({
+export const Navbar = ({
   darkMode,
   setDarkMode,
   onOpenQuote,

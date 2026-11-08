@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Clock, ArrowRight, X } from 'lucide-react';
 
-export const BlogSection: React.FC = () => {
-  const [selectedArticle, setSelectedArticle] = useState<any | null>(null);
+export const BlogSection = () => {
+  const [selectedArticle, setSelectedArticle] = useState(null);
 
   const articles = [
     {

@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { ServicesSection } from './components/ServicesSection';
-import { CostCalculator } from './components/CostCalculator';
-import { ProjectGallery } from './components/ProjectGallery';
-import { BlogSection } from './components/BlogSection';
-import { Footer } from './components/Footer';
-import { QuoteModal } from './components/QuoteModal';
+'use client';
 
-export default function App() {
+import React, { useState, useEffect } from 'react';
+import { Navbar } from '@/src/components/Navbar';
+import { Hero } from '@/src/components/Hero';
+import { ServicesSection } from '@/src/components/ServicesSection';
+import { CostCalculator } from '@/src/components/CostCalculator';
+import { ProjectGallery } from '@/src/components/ProjectGallery';
+import { BlogSection } from '@/src/components/BlogSection';
+import { Footer } from '@/src/components/Footer';
+import { QuoteModal } from '@/src/components/QuoteModal';
+
+export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
-  const [prefilledEstimate, setPrefilledEstimate] = useState<string>('');
+  const [prefilledEstimate, setPrefilledEstimate] = useState('');
 
   useEffect(() => {
     if (darkMode) {
@@ -21,14 +23,14 @@ export default function App() {
     }
   }, [darkMode]);
 
-  const handleNavigate = (sectionId: string) => {
+  const handleNavigate = (sectionId) => {
     const el = document.getElementById(sectionId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const handleApplyEstimate = (estimateText: string) => {
+  const handleApplyEstimate = (estimateText) => {
     setPrefilledEstimate(estimateText);
     setIsQuoteOpen(true);
   };

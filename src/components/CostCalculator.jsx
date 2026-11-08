@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { Calculator, DollarSign, Clock, Layers, ArrowRight } from 'lucide-react';
 
-interface CostCalculatorProps {
-  onApplyEstimate: (estimateDetails: string) => void;
-}
-
-export const CostCalculator: React.FC<CostCalculatorProps> = ({ onApplyEstimate }) => {
-  const [projectType, setProjectType] = useState<'residential' | 'commercial' | 'remodel' | 'structural'>('residential');
-  const [squareFeet, setSquareFeet] = useState<number>(2500);
-  const [qualityTier, setQualityTier] = useState<'standard' | 'premium' | 'luxury'>('premium');
+export const CostCalculator = ({ onApplyEstimate }) => {
+  const [projectType, setProjectType] = useState('residential');
+  const [squareFeet, setSquareFeet] = useState(2500);
+  const [qualityTier, setQualityTier] = useState('premium');
 
   // Pricing multipliers per sq ft
   const baseRates = {
@@ -63,7 +59,7 @@ export const CostCalculator: React.FC<CostCalculatorProps> = ({ onApplyEstimate 
                 1. Select Project Type
               </label>
               <div className="grid grid-cols-2 gap-3">
-                {(['residential', 'commercial', 'remodel', 'structural'] as const).map((type) => (
+                {['residential', 'commercial', 'remodel', 'structural'].map((type) => (
                   <button
                     key={type}
                     onClick={() => setProjectType(type)}
@@ -111,7 +107,7 @@ export const CostCalculator: React.FC<CostCalculatorProps> = ({ onApplyEstimate 
                 3. Material & Finish Tier
               </label>
               <div className="grid grid-cols-3 gap-3">
-                {(['standard', 'premium', 'luxury'] as const).map((tier) => (
+                {['standard', 'premium', 'luxury'].map((tier) => (
                   <button
                     key={tier}
                     onClick={() => setQualityTier(tier)}

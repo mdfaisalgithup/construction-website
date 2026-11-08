@@ -1,11 +1,7 @@
 import React from 'react';
 import { Home, Building, Compass, SunMedium, Wrench, Shield, ArrowUpRight } from 'lucide-react';
 
-interface ServicesSectionProps {
-  onOpenQuote: () => void;
-}
-
-export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenQuote }) => {
+export const ServicesSection = ({ onOpenQuote }) => {
   const services = [
     {
       icon: <Home className="w-6 h-6 text-amber-500" />,

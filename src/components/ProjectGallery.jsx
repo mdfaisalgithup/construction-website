@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar, ArrowUpRight } from 'lucide-react';
 
-interface ProjectGalleryProps {
-  onOpenQuote: () => void;
-}
-
-export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuote }) => {
-  const [filter, setFilter] = useState<'all' | 'residential' | 'commercial' | 'remodel'>('all');
+export const ProjectGallery = ({ onOpenQuote }) => {
+  const [filter, setFilter] = useState('all');
 
   const projects = [
     {
@@ -55,7 +51,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuote }) =
 
           {/* Filter Tabs */}
           <div className="mt-6 md:mt-0 flex items-center gap-2 p-1.5 bg-slate-100 dark:bg-slate-800 rounded-xl">
-            {(['all', 'residential', 'commercial', 'remodel'] as const).map((tab) => (
+            {['all', 'residential', 'commercial', 'remodel'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setFilter(tab)}

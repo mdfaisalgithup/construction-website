@@ -1,12 +1,7 @@
 import React from 'react';
 import { HardHat, ArrowRight, CheckCircle2 } from 'lucide-react';
 
-interface HeroProps {
-  onOpenQuote: () => void;
-  onExploreServices: () => void;
-}
-
-export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreServices }) => {
+export const Hero = ({ onOpenQuote, onExploreServices }) => {
   return (
     <section id="hero" className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white">
       {/* Background ambient glow */}

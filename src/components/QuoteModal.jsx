@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { X, Send, CheckCircle2, Building2, PhoneCall } from 'lucide-react';
+import { X, Send, CheckCircle2, Building2 } from 'lucide-react';
 
-interface QuoteModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  prefilledEstimate?: string;
-}
-
-export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, prefilledEstimate }) => {
+export const QuoteModal = ({ isOpen, onClose, prefilledEstimate }) => {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -29,7 +23,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, prefill
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
   };
