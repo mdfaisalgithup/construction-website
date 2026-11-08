@@ -15,6 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Monetag verification meta tag */}
+        <meta name="monetag" content="93da8b61128bdf7e670261baae72ddc8" />
         {/* Google AdSense Auto Ads Script for publisher pub-9131582476102508 */}
         <script
           async
