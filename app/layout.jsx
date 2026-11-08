@@ -17,10 +17,22 @@ export default function RootLayout({ children }) {
       <head>
         {/* Monetag verification meta tag */}
         <meta name="monetag" content="93da8b61128bdf7e670261baae72ddc8" />
-        {/* Monetag tag script */}
+        {/* Monetag tag script (Zone 12216219) */}
         <script
           dangerouslySetInnerHTML={{
             __html: "(function(s){s.dataset.zone='12216219',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))",
+          }}
+        />
+        {/* Monetag vignette script (Zone 12216253) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "(function(s){s.dataset.zone='12216253',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))",
+          }}
+        />
+        {/* Monetag vignette script (Zone 12216293) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "(function(s){s.dataset.zone='12216293',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))",
           }}
         />
         {/* Google AdSense Auto Ads Script for publisher pub-9131582476102508 */}
