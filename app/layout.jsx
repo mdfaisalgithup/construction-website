@@ -15,6 +15,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google AdSense Auto Ads Script for publisher pub-9131582476102508 */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9131582476102508"
+          crossOrigin="anonymous"
+        />
         {/* Monetag verification meta tag */}
         <meta name="monetag" content="93da8b61128bdf7e670261baae72ddc8" />
         {/* Monetag tag script (Zone 12216219) */}
@@ -34,12 +40,6 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: "(function(s){s.dataset.zone='12216293',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))",
           }}
-        />
-        {/* Google AdSense Auto Ads Script for publisher pub-9131582476102508 */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9131582476102508"
-          crossOrigin="anonymous"
         />
       </head>
       <body className="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-amber-500 selection:text-white">
